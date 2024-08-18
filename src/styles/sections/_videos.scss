@@ -1,0 +1,19 @@
+.videos{
+    width: 100%;
+
+    &__cards{
+        display:flex;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 98%;
+                cursor: pointer;
+            }
+        }
+    }
+}

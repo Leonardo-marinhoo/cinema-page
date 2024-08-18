@@ -1,12 +1,13 @@
 @use "variables";
 
-.episodios {
+.episodes {
   &__cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    // background:red;
 
     &__item {
       display: flex;
@@ -37,32 +38,30 @@
           flex-direction: column;
           gap: 0.5rem;
           &__tag {
-            padding: 0.1rem 0.5rem;
+            padding: 0 0.5rem;
             background: variables.$accent-color;
             text-transform: uppercase;
             font-family: "Poppins", sans-serif;
-            font-weight: bold;
             font-size: 0.8rem;
             border-radius: 5px;
             letter-spacing: 0.1rem;
           }
           &__date {
-            color:variables.$text-color-tertiary
+            color: variables.$text-color-tertiary;
           }
         }
       }
-      .card-body{
+      .card-body {
         display: flex;
         flex-direction: column;
 
-        &__title{
-            font-family: 'Poppins',sans-serif;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
+        &__title {
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 0.2rem;
         }
-        &__text{
-            font-family: 'Quicksand';
-            color:variables.$text-color-secondary;
+        &__text {
+          font-family: "Quicksand";
+          color: variables.$text-color-secondary;
         }
       }
     }

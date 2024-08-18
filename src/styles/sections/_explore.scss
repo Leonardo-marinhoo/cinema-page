@@ -1,0 +1,12 @@
+.explore{
+    display: flex;
+    flex-direction: column;
+
+    &__photos{
+        img{
+            max-width: 100%;
+            cursor: pointer;
+           
+        }
+    }
+}

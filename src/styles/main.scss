@@ -4,7 +4,9 @@
 @use "./components/header";
 @use "./sections/hero";
 @use "./sections/about";
-@use "./sections/episodios";
+@use "./sections/_episodes";
+@use "./sections/explore";
+@use "./sections/videos";
 
 @mixin text($font-size) {
   font-size: $font-size;
@@ -23,9 +25,17 @@
 
 .text {
   @include text(16px);
+  letter-spacing: 1px;
 
-  &--is-bold{
+  &--is-bold {
     font-weight: bold;
+  }
+  &--is-secondary {
+    color: variables.$text-color-secondary;
+  }
+  &--is-link {
+    text-decoration: none;
+    color: rgb(0, 129, 208);
   }
 }
 
@@ -50,7 +60,7 @@ section {
 
   section {
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   .content__column-6 {
     display: flex;
