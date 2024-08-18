@@ -37,6 +37,16 @@
     text-transform: uppercase;
     color: variables.$text-color-secondary;
 
+    &__item{
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.2);
+            margin: 0 1rem;
+        }
+    }
+
     strong{
         color: variables.$text-color-primary;
     }

@@ -1,14 +1,10 @@
 @use "variables";
 @use "imports";
-@use "scrollbar";
-@use "hero";
-@use "about";
-@use "header";
-
-@font-face {
-  src: url("../../assets/fonts/Benguiat.ttf");
-  font-family: "Benguiat Bold";
-}
+@use "./components/scrollbar";
+@use "./components/header";
+@use "./sections/hero";
+@use "./sections/about";
+@use "./sections/episodios";
 
 @mixin text($font-size) {
   font-size: $font-size;
@@ -19,20 +15,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .text--big {
   @include text(17px);
 }
 
 .text {
-  @include text(14px);
+  @include text(16px);
+
+  &--is-bold{
+    font-weight: bold;
+  }
 }
 
 body {
   overflow-x: hidden;
-  // background: rgb(26, 26, 26);
-  background:rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
 .divider {
   height: 1px;
@@ -40,7 +39,37 @@ body {
   background: rgba(255, 255, 255, 0.193);
 }
 
-section{
-  padding: 3rem 4rem;
+section {
+  padding: 1.5rem 5rem;
 }
 
+.content__row {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+
+  section {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .content__column-6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .content__column-4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  border-left: 4px solid variables.$accent-color;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}

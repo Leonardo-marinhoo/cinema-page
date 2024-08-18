@@ -10,5 +10,5 @@ function buildStyles(){
 exports.default = gulp.parallel(buildStyles)
 
 exports.watch = function(){
-    gulp.watch('./src/styles/*.scss', gulp.parallel(buildStyles));
+    gulp.watch('./src/styles/**/*.scss', gulp.parallel(buildStyles));
 }

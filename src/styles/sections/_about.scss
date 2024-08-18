@@ -1,0 +1,58 @@
+@use "variables";
+
+.about {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+
+
+  &__awards {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid variables.$accent-color;
+    border-radius: 5px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    height: 5rem;
+    margin-bottom: 3rem;
+
+    a {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .skew {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 3rem 1.3rem;
+      background-color: variables.$accent-color;
+      margin-right: 3rem;
+      height: 100%;
+
+      &::after {
+        content: "";
+        background: inherit;
+        height: 100%;
+        left: calc(100% - 1.1rem);
+        position: absolute;
+        transform: skewX(-20deg);
+        width: 2.7rem;
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-right: 4rem;
+
+      a {
+        color: rgb(10, 10, 10);
+      }
+      span {
+        color: variables.$text-color-secondary;
+      }
+    }
+  }
+}
