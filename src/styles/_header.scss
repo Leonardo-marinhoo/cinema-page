@@ -1,0 +1,55 @@
+@use "variables";
+
+.header {
+//   position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: white;
+  color: black;
+  padding: 0.5rem 3rem;
+  font-family: "Poppins", sans-serif;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &__title {
+      font-size: 3rem;
+      font-family: "New Amsterdam", sans-serif;
+    }
+    .icon {
+      width: 3rem;
+    }
+  }
+  &__pages {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: variables.$text-color-secondary;
+
+    strong{
+        color: variables.$text-color-primary;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+
+    .icon {
+      font-size: 1.2rem;
+    }
+  }
+}

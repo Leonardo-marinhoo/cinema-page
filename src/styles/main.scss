@@ -1,11 +1,46 @@
-@use "hero";
+@use "variables";
+@use "imports";
 @use "scrollbar";
+@use "hero";
+@use "about";
+@use "header";
+
+@font-face {
+  src: url("../../assets/fonts/Benguiat.ttf");
+  font-family: "Benguiat Bold";
+}
+
+@mixin text($font-size) {
+  font-size: $font-size;
+  line-height: $font-size + 10px;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-body{
-    overflow-x: hidden;
+.text--big {
+  @include text(17px);
 }
+
+.text {
+  @include text(14px);
+}
+
+body {
+  overflow-x: hidden;
+  // background: rgb(26, 26, 26);
+  background:rgb(255, 255, 255);
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.193);
+}
+
+section{
+  padding: 3rem 4rem;
+}
+

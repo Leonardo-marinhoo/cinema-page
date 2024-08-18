@@ -1,15 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./dist/styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./dist/styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img class="icon" src="./dist/images/logo.png" alt="" srcset="">
+                <h1 class="header__logo__title">CINE</h1>
+            </div>
+            <ul class="header__pages">
+                <li class="header__pages__item">
+                    <strong>Início</strong>
+                </li>
+                <li class="header__pages__item">
+                    Séries
+                </li>
+                <li class="header__pages__item">
+                    Filmes
+                </li>
+                <li class="header__pages__item">
+                    Top 10
+                </li>
+            </ul>
+            <ul class="header__icons">
+                <li class="header__icons__item">
+                    <i class="fi fi-rr-search icon"></i>
+                </li>
+                <li class="header__icons__item">
+                    <i class="fi fi-rs-star icon"></i>
+                </li>
+                <li class="header__icons__item">
+                    <i class="fi fi-rs-user icon"></i>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
     <section class="hero">
-        <img src="./dist/images/hero_desktop.jpg" alt="">
+      <div class="hero__container">
+        <h1 class="hero__title">
+          STRANGER <br />
+          THINGS
+        </h1>
+        <div class="divider"></div>
+        <div class="hero__tags">
+          <span class="hero__tags__tag text--big">
+            2018 - Science, Horror, Drama - TV Series
+          </span>
+          <span class="hero__tags__tag text--big">
+            <img src="./src/images/imdb.png" alt="" srcset="" />
+            9.4
+          </span>
+        </div>
+        <div class="divider"></div>
+        <p class="hero__sinopsys text">
+          Situada no início dos anos 1980, Stranger Things se passa na cidade
+          rural fictícia de Hawkins, Indiana. Como fachada, o laboratório da
+          região realizava experimentos científicos para o Departamento de
+          Energia Americano, quando na realidade, os pesquisadores ali
+          investiram em experimentos com o paranormal e o sobrenatural,
+          incluindo o uso de cobaias humanas.
+        </p>
+        <div class="hero__buttons">
+            <button class="button text--big">
+                <i class="fi fi-ss-play icon icon--red"></i>
+                Assistir Agora
+            </button>
+            <button class="button text--big button--no-border button--secondary-btn">
+                <i class="fi fi-rs-heart icon"></i>
+                Adicionar à Lista
+            </button>
+        </div>
+      </div>
     </section>
-    
-</body>
+    <div class="divider"></div>
+    <section class="about">
+        <div class="about__awards">
+            <div class="skew">
+                <a>Série mais bem avaliada n° 112</a>
+            </div>
+            <div class="info">
+                <a>Ganhou 12 Primetime Emmys</a>
+                <span>113 vitórias e 317 indicações</span>
+            </div>
+        </div>
+        <div class="content__row">
+            <div class="content__column-6">
+                <h2 class="section__title">
+                    Você sabia?
+                </h2>
+            </div>
+            <div class="content__column-4"></div>
+        </div>
+
+        </div>
+    </section>
+  </body>
 </html>

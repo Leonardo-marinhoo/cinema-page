@@ -1,0 +1,64 @@
+.about {
+    // padding: 2rem 5.6vw;
+    position: relative;
+    display:flex;
+    height: 80vh;
+    
+    &__awards{
+        display: flex;
+        position:absolute;
+        left: 25%;
+        top: -2.5rem;
+        align-items: center;
+        overflow: hidden;
+        background: rgb(31, 31, 31);
+        border: 1px solid #F5C518;
+        border-radius: 5px;
+        width: 50vw;
+        font-family: 'Poppins', sans-serif;
+        margin: 0 auto;
+        height: 5rem;
+
+        a{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .skew{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 3rem 1.3rem;
+            background-color: #F5C518;
+            margin-right: 3rem;
+            height: 100%;
+
+            &::after{
+                content: "";
+                background: inherit;
+                height: 100%;
+                left: calc(100% - 1.1rem);
+                position: absolute;
+                transform: skewX(-20deg);
+                width: 2.7rem;
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-right: 4rem;
+
+            a{
+                color:white;
+            }
+            span{
+                color: rgba(255, 255, 255, 0.505);
+            }
+        }
+    }
+
+
+
+}
+
