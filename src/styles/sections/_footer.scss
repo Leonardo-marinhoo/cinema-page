@@ -7,6 +7,10 @@
     background: black;
     color:white;
 
+    @media (max-width: 780px){
+      padding: 1rem;
+    }
+
     
     &__recent{
         padding: 0;
@@ -14,23 +18,38 @@
         
         &__cards{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(6, 1fr);
             gap: 2rem;
             width: 100%;
             list-style-type: none;
+
+            @media (max-width: 780px){
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
             &__item{
                 display: flex;
                 flex-direction: column;
                 background-color: rgb(31,31,31);
                 border-radius: 4px;
+
+                @media (max-width: 780px){
+                    width: 8rem;
+                }
                 
                 img{
                     max-width: 12rem;
+                    @media (max-width: 780px){
+                        max-width: 100%;
+                    }
                 }
                 span{
                     padding: 1rem 0.5rem;
                 }
+
+                
             }
 
         }

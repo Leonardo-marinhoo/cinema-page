@@ -68,6 +68,11 @@ body {
 
 section {
   padding: 1.5rem 5rem;
+
+  @media(max-width: 780px){
+    padding: 0;
+    padding:1rem 0.5rem;
+  }
 }
 
 .content__row {
@@ -75,21 +80,39 @@ section {
   grid-template-columns: 70% 30%;
   width: 100%;
 
+  @media(max-width: 780px){
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   section {
     padding: 0;
     margin-bottom: 2rem;
+
+    @media (max-width: 780px){
+      margin-bottom: 3rem;
+    }
   }
   .content__column-6 {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0 2rem;
+
+    @media(max-width: 780px){
+    padding: 0;
+    }
   }
   .content__column-4 {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0 2rem;
+
+    @media (max-width: 780px){
+      padding: 0;
+    }
   }
 }
 

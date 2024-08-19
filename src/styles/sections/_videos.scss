@@ -3,15 +3,22 @@
 
     &__cards{
         display:flex;
-        // align-items: center;
         gap: 1rem;
         list-style: none;
+
+        @media (max-width: 780px){
+            flex-direction: column;
+        }
 
         &__item{
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
             width: 90%;
+
+            @media (max-width: 780px){
+                width: 100%;
+            }
             img{
                 width: 100%;
                 cursor: pointer;

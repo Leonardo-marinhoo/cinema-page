@@ -29,6 +29,13 @@
       background-color: variables.$accent-color;
       margin-right: 3rem;
       height: 100%;
+      width: 50%;
+
+      @media(max-width: 780px){
+        padding: 0;
+        padding: 0.5rem;
+        margin-right: 1.3rem;
+      }
 
       &::after {
         content: "";
@@ -38,6 +45,11 @@
         position: absolute;
         transform: skewX(-20deg);
         width: 2.7rem;
+
+        @media(max-width: 780px){
+          width: 2rem;
+          left: calc(100% - 1rem);
+        }
       }
     }
     .info {
@@ -46,11 +58,19 @@
       gap: 0.5rem;
       padding-right: 4rem;
 
+      @media(max-width: 780px){
+        padding-right: 0;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+      }
+
       a {
         color: rgb(10, 10, 10);
+
       }
       span {
         color: variables.$text-color-secondary;
+        width: 100%;
       }
     }
   }
