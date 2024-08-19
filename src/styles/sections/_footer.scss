@@ -1,0 +1,72 @@
+@use 'variables';
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 5rem;
+    background: black;
+    color:white;
+
+    
+    &__recent{
+        padding: 0;
+        width: 100%;
+        
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+            width: 100%;
+            list-style-type: none;
+
+            &__item{
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(31,31,31);
+                border-radius: 4px;
+                
+                img{
+                    max-width: 12rem;
+                }
+                span{
+                    padding: 1rem 0.5rem;
+                }
+            }
+
+        }
+
+        &__title{
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+    &__links{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-top: 5rem;
+        gap: 2rem;
+        width: 100%;
+        justify-content: center;
+
+        &__item{
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+
+            .icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    small{
+        margin: 0 auto;
+        margin-top: 3rem;
+        color: variables.$text-color-tertiary;
+    }
+}

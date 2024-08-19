@@ -1,13 +1,17 @@
 @use "variables";
 
 .header {
-//   position: fixed;
   width: 100%;
   z-index: 1;
   background: white;
   color: black;
   padding: 0.5rem 3rem;
   font-family: "Poppins", sans-serif;
+
+  @media (max-width: 780px) {
+    padding: 0.5rem 1rem;
+
+  }
 
   .container {
     display: flex;
@@ -22,10 +26,18 @@
     &__title {
       font-size: 3rem;
       font-family: "New Amsterdam", sans-serif;
+
+      @media (max-width: 780px) {
+        font-size: 2rem;
+      }
     }
-    .icon {
+    .branding {
       width: 3rem;
+      @media (max-width: 780px) {
+        width: 2rem;
+      }
     }
+    
   }
   &__pages {
     display: flex;
@@ -37,18 +49,20 @@
     text-transform: uppercase;
     color: variables.$text-color-secondary;
 
-    &__item{
-        cursor: pointer;
-        transition: 300ms ease-in-out;
+    &__item {
+      cursor: pointer;
+      transition: 300ms ease-in-out;
 
-        &:hover{
-            transform: scale(1.2);
-            margin: 0 1rem;
-        }
+      &:hover {
+        transform: scale(1.2);
+        margin: 0 1rem;
+      }
     }
-
-    strong{
-        color: variables.$text-color-primary;
+    strong {
+      color: variables.$text-color-primary;
+    }
+    @media (max-width: 780px) {
+      font-size: 0.8rem;
     }
   }
 
@@ -61,5 +75,9 @@
     .icon {
       font-size: 1.2rem;
     }
+    @media (max-width: 780px) {
+      display: none;
+    }
+
   }
 }

@@ -1,0 +1,32 @@
+.cast{
+    &__actors{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 0;
+        width: 100%;
+
+        &__item{
+            display: flex;
+            align-items: center;
+
+            .img-container{
+                display: flex;
+                height: 6rem;
+                width: 6rem;    
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 1rem;
+                
+                img{
+                    max-width: 100%;
+                }
+
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    }
+}

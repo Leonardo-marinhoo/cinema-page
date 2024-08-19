@@ -2,25 +2,38 @@
 
 .hero{
     position:relative;
-    padding-top: 20vh;
+    padding-top: 10vh;
     padding-left: 5vw;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-image: url(../../dist/images/hero_desktop2.jpg);
     background-size: cover;
+
+    @media (max-width: 780px) {
+      padding:0;
+      padding-top: 5vh;
+    }
     
     &__container{
         display:flex;
-
         flex-direction: column;
         padding: 1rem;
-        width: 550px;
+        max-width: 550px;
+
+        @media (max-width: 780px) {
+            width: 100vw;
+            padding: 0.5rem;
+        }
 
     }
     &__title{
         color:#FFF;
         font-family: 'Benguiat Bold';
         font-size: 4.5rem;
+
+        @media (max-width: 780px) {
+            font-size: 2.5rem;
+        }
     }
     &__tags{
         display:flex;

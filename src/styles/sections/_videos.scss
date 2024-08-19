@@ -3,16 +3,21 @@
 
     &__cards{
         display:flex;
-        align-items: center;
+        // align-items: center;
         gap: 1rem;
         list-style: none;
 
         &__item{
             display: flex;
             flex-direction: column;
+            gap: 0.5rem;
+            width: 90%;
             img{
-                width: 98%;
+                width: 100%;
                 cursor: pointer;
+            }
+            span{
+                max-width: 100%;
             }
         }
     }
